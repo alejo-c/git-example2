@@ -1,0 +1,109 @@
+body {
+	background-color: #7289da;
+	color: #fff;
+	text-align: center;
+}
+
+header h1 {
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+
+main {
+	width: 24em;
+	background-color: #23272a;
+	border-radius: 1em;
+	margin-top: 7em;
+	margin-inline: auto;
+	padding-block: 1.5em;
+	font-family: 'Courier New';
+}
+
+#validation_form {
+	display: grid;
+	grid-template-areas:
+		"l i i"
+		"b b b";
+	column-gap: .5em;
+}
+
+#labels {
+	grid-area: l;
+}
+
+#inputs {
+	grid-area: i;
+}
+
+#buttons {
+	grid-area: b;
+	margin-top: 1.3em;
+}
+
+#msg {
+	margin: 0;
+	margin-top: 1em;
+}
+
+.form-input {
+	display: block;
+	font-family: 'Segoe UI';
+	width: 80%;
+	background-color: #2c2f33;
+	color: #fff;
+	border: none;
+	padding: .5em;
+	margin: .5em;
+	outline: none;
+}
+
+.form-input::-webkit-inner-spin-button,
+.form-input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+.form-input:-webkit-autofill,
+.form-input:-webkit-autofill:hover,
+.form-input:-webkit-autofill:focus {
+	-webkit-text-fill-color: #fff;
+	-webkit-box-shadow: 0 0 0px 1000px #2c2f33 inset;
+	transition: background-color 5000s ease-in-out 0s;
+	caret-color: #fff;
+}
+
+.form-label {
+	display: block;
+	padding-block: .4em;
+	margin-block: .4em;
+	text-align: right;
+	cursor: auto;
+}
+
+.btn {
+	width: 7em;
+	background-color: #2c2f33;
+	border: none;
+	border-radius: 2em;
+	padding: 1em;
+	font-size: .8em;
+	color: #fff;
+	font-weight: bolder;
+}
+
+.btn:hover {
+	background-color: #7289da;
+	color: #23272a;
+	cursor: pointer;
+}
+
+.btn:active {
+	color: #fff;
+}
+
+.invalid, .red {
+	color: #ed4245;
+}
+
+.valid {
+	color: #99aab5;
+}
