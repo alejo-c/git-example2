@@ -11,32 +11,35 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>User Validation</h1>
-		</header>
-
 		<main>
-			<form id="validation-form">
-				<div class="form-grp">
-					<label for="user-name" class="form-label">Nombre:</label>
-					<input type="text" name="user-name" id="name-input" class="form-input">
-				</div>
-				<div class="form-grp">
-					<label for="user-age" class="form-label">Age:</label>
-					<input type="number" name="user-age" id="age-input" class="form-input">
-				</div>
-				<div class="form-grp">
-					<label for="user-profession" class="form-label">Nombre:</label>
-					<input type="text" name="user-profession" id="profession-input"
-						class="form-input">
-				</div>
+			<header>
+				<h1>User Validation</h1>
+			</header>
 
-				<button id="validate-btn" type="submit">Validate</button>
+			<form id="validation_form" onsubmit="validate()">
+				<span id="labels">
+					<label class="form-label">Name:</label>
+					<label class="form-label">Age:</label>
+					<label class="form-label">occupation:</label>
+				</span>
+
+				<span id="inputs">
+					<input type="text" id="name_input" class="form-input"
+						placeholder="Whats your name?" required>
+					<input type="number" id="age_input" class="form-input" min="1" max="122"
+						placeholder="How old are you?" required>
+					<input type="text" id="occupation_input" class="form-input"
+						placeholder="Whats your occupation?" required>
+				</span>
+
+				<div id="buttons">
+					<button type="button" class="btn" onclick="test()">Test</button>
+					<button type="reset" class="btn">Reset</button>
+					<button type="submit" class="btn">Validate</button>
+				</div>
 			</form>
 
-			<section id="">
-
-			</section>
+			<p id="msg">&nbsp;</>
 		</main>
 
 		<script src="js/app.js"></script>
